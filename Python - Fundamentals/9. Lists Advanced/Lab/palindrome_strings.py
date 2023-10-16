@@ -2,6 +2,7 @@ def palindrome_filtered(word):
     if word == word[::-1]:
         return word
 
+
 words = input().split()
 palindrome_word = input()
 
