@@ -8,7 +8,9 @@ for row in range(1, number + 1):
 
     for i in name:
         ascii_ += ord(i)
+
     ascii_ = int(ascii_ / row)
+
     if ascii_ % 2 == 0:
         even_set.add(ascii_)
     else:

@@ -4,6 +4,7 @@ longest = []
 for _ in range(number):
     set_one = set()
     set_two = set()
+
     intersections = input().split('-')
     first_start, first_end = intersections[0].split(',')
     second_start,second_end = intersections[1].split(',')
