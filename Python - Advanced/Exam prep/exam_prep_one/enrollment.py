@@ -16,9 +16,8 @@ def gather_credits(credits_needed,*args):
         return f"You need to enroll in more courses! You have to gather {credits_needed - total_credits} credits more."
 
 print(gather_credits(
-    60,
-    ("Basics", 27),
-    ("Basics", 27),
+    80,
     ("Advanced", 30),
-    ("Web", 30)
+    ("Basics", 27),
+    ("Fundamentals", 27),
 ))
