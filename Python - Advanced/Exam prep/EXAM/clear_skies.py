@@ -2,7 +2,6 @@ size = int(input())
 
 matrix = []
 pos = []
-enemy_planes = 0
 killed_planes = 0
 armor = 300
 
@@ -20,10 +19,6 @@ for row in range(size):
         col = data.index('J')
         pos = [row,col]
 
-    if 'E' in data:
-        amount = data.count('E')
-        enemy_planes += amount
-
     matrix.append(data)
 
 while True:
@@ -39,9 +34,7 @@ while True:
     matrix[current_row][current_col] = '-'
     matrix[row][col] = 'J'
 
-    if symbol == '-':
-        pass
-    elif symbol == 'E':
+    if symbol == 'E':
         armor -= 100
         killed_planes += 1
         if killed_planes == 4:
